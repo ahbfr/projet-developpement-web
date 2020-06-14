@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Les règles du tennis</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="style.css">
+        <link rel = "icon" href="images/roland_garros.ico"/>
+    </head>
+
+
+   <body>
+  
+  <div id = "page_regles">
+    <header>
+                       <div id="titre">
+                    <div id="logo">
+                        <img src="images/roland_garros.png" alt="Logo Tennis" />
+                        <h1>Tennis Land</h1>    
+                    </div>
+                    <h2>Apprenez le tennis en détail !</h2>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="histoire.html">Histoire</a></li>
+                        <li><a href="regles.html">Règles</a></li>
+                        <li><a href="personnages.html">Les légendes</a></li>
+                        <li><a href="classement.html">Classement</a></li>
+                        <li><a href="joueur.html">Créer votre joueur !</a></li>
+                        <li><a href="info.html">Qui sommes nous ?</a></li>
+                    </ul>
+                </nav>
+    </header>
+
+	
+      
+        <div class = "regles">
+            <ul class = "liste_regle">
+                <li id = "colonne">
+                    <h1>Le Court</h1>
+                    <p>Le court de tennis est un rectangle de 23,77m de long sur 8,23m (simple) ou 10,97m (double). Séparé en son milieu par un filet, d’une hauteur de 0,914m (hauteur réglementaire).</p>
+                </li> 
+            </ul>
+            <img src = "images/court.jpg" id = "court"/><br/><br/>
+        </div> 
+        <div class = "regles">
+            <ul class = "liste_regle">
+                <li id = "colonne">
+                    <h1>Le Jeu</h1>
+                    <p>Le décompte des points, au tennis, un jeu se compose de 4 points.</p>
+                    <p>Pas de point : « zéro »</p>
+                    <p>Premier point : « 15 »</p>
+                    <p>Deuxième point : « 30 »</p>
+                    <p>Troisième point : « 40 »</p>
+                    <p>Quatrième point : « jeu »</p>
+                    <p>Si les 2 joueurs ont marqué 3 points, alors on compte « 40A ».</p>
+                    <p>Après « 40A », le point suivant se note « Avantage » pour le joueur qui le gagne. <br>Si le même joueur gagne un autre point alors il gagne le « jeu ». <br>Sinon les deux joueurs repartent à « égalité » (soit « 40A »).</p>
+                </li>
+                <li id = "colonne">
+                    <p><br><br><br>Pour gagner un match il faut gagner 2 sets (ou manche).</p>
+                    <p>Un set, correspond à 6 jeux.</p>
+                    <p>Lorsqu'il y a « 5-5 », il faut aller jusqu’à 7 jeux.</p>
+                    <p>S’il y a « 6-6 » on réalise alors un « jeu décisif ».</p>
+                    <p>Le « jeu décisif » se compte différemment des autres jeux.</p>
+                    <p>La marque des points est compté « zéro », « 1 », « 2 », « 3 », … jusqu'à 7.</p>
+                    <p>Le premier joueur allant à 7 points remporte le « jeu décisif » et le set.</p>
+                    <p>S’il y a « 6-6 », alors le jeu décisif continuera jusqu'à ce qu'il y ait 2 points d’écart.</p>
+                    <p>Au début du « jeu décisif », le joueur qui démarre au service va servir une fois, puis chacun servira deux fois jusqu'à la fin du tie-break.</p>
+                </li>
+            </ul>
+        </div>
+        <div class = "regles">
+            <ul class = "liste_regle">
+                <li id = "colonne">
+                    <h1>Le service</h1>
+                    <p>Le « serveur » est le joueur qui met la balle en jeu pour le premier point.</p>
+                    <p>Il a le droit à deux balles pour débuter le point.</p>
+                    <p>S’il ne réussit aucune de ses deux balles, alors il perdra le point dès l’engagement.</p>
+                    <p>Le « relanceur », est le joueur qui s’apprête à renvoyer la balle servie par son adversaire.</p>
+                </li>
+                <li id = "colonne">
+                    <p><br><br><br>Avant de démarrer le match, le choix du côté et le droit d’être serveur ou relanceur se décideront par un tirage au sort .</p>
+                    <p>C’est le gagnant du tirage au sort qui choisi en premier soit le côté de terrain pour le premier jeu, soit de servir ou de relancer.</p>
+                    <p>Et l’autre joueur pourra décider le choix restant.</p>
+                    <p>À la fin du premier jeu, les joueurs changent de côté.</p>
+                    <p>Puis tous les deux jeux jusqu'à la fin du set.</p>
+                    <p>Lors du jeu décisif, le changement de côté se fait tout les six points.</p>
+                </li>
+            </ul>
+        </div>
+        <div class = "regles"> <br/>
+             <h1 id ="anim"> Animation </h1>
+            <img src = "images/tennis.gif"  id = "gif"/> <br/><br/>
+        </div>
+        <br/>
+
+        <div class = "button">
+            <a class="bouton_precedent" onclick="regle_suiv(-1)"> Précédent </a>
+            <a class="boutton_suivant" onclick="regle_suiv(1)"> Suivant </a>
+        </div>
+        <br>
+        <footer>
+                    <div id="reseaux">
+                    <h1>Nos réseaux</h1>
+                     <p><a href="https://twitter.com/FFTennis?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitter.png" alt="Twitter" title ="FFT"/></a><a href="https://fr-fr.facebook.com/FFTennis/" target="_blank"><img src="images/facebook.png" alt="Facebook" title ="FFT"/></a><a href="https://fr.linkedin.com/company/fft" target="_blank"><img src="images/linkedin.png" alt="Linkedin" title ="FFT"/></a><a href="https://www.instagram.com/fftennis/?hl=fr" target="_blank"><img src="images/instagram.png" alt="Instagram" title ="FFT"/></a></p>
+
+                </div>
+
+                <div id = "photosup">
+                    <h1> Quelques Images </h1>
+                      <p><a href="images/us_open_max.jpg" target="_blank"><img src="images/us_open.jpg" alt="usopen" title ="Cliquez pour agrandir" class = "pied"/></a><a href="images/roland_max.jpg " target="_blank"><img src="images/roland.jpg" alt="roland" title ="Cliquez pour agrandir" class = "pied"/></a><a href="images/wimb_max.jpg" target="_blank"><img src="images/wimb.jpg" alt="wimble" title ="Cliquez pour agrandir" class = "pied"/></a><a href="images/open_max.jpg" target="_blank"><img src="images/open.jpg" alt="open_australie" title ="Cliquez pour agrandir" class = "pied"/></a><a href="images/yannick_max.jpg" target="_blank"><img src="images/yannick.jpg" alt="yannick_noah" title ="Cliquez pour agrandir" class = "pied"/></a> <B>Credits to FFT.fr © </B></p>
+                    
+                </div>
+
+
+                <div id="Identite">
+                    <h1>Qui somme nous ?</h1>
+                    <p><a href="info.html"><img src="images/en_savoir.png" alt="qui_somme_nous" title = "Cliquez pour en savoir plus sur nous"/></a></p>
+                </div>
+ 
+      
+       </footer>
+     </div>
+   </body>
+    
+    <script type="text/javascript" src="regles.js"> </script>
+</html>

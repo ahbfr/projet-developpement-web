@@ -1,0 +1,1098 @@
+* {box-sizing : border-box;}
+
+
+
+/* police */
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body
+{
+    background-image: url('images/terre_battue.jpg');
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: white;
+     /*pour que la barre de navigation prenne toute la largeur*/
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+
+
+header
+{
+    background: url('images/separateur.png') bottom repeat-x, url('images/gazon_head.jpg'); 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 3;
+    position: sticky;
+    top: 0px;
+
+  
+}
+
+
+
+
+footer
+{
+    background: url('images/separateur.png') top repeat-x ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+/*1ere page*/
+#page_acceuil
+{
+
+    width: 98.87vw;
+    margin: auto;
+}
+
+
+.CatHistoire, .CatRegles, .CatLegendes, .CatClassement
+{
+    position:absolute;
+    top: 190px; 
+    left: 670px; 
+    z-index:2 ;
+    font-size:100%;
+
+
+    text-transform: uppercase;
+    font-family: 'Dayrom';
+
+
+
+}
+
+.CatAVDJ
+{
+    position:absolute;
+    top: 190px; 
+    left: 600px; 
+    z-index:2 ;
+    font-size:100%;
+
+
+    text-transform: uppercase;
+    font-family: 'Dayrom';
+
+}
+
+.CatHistoire h1, .CatRegles h1, .CatLegendes h1,.CatClassement h1, .CatAVDJ h1
+{
+    color: green;
+
+}
+
+
+
+
+.CatHistoire h1:hover, .CatRegles h1:hover, .CatLegendes h1:hover, .CatClassement h1:hover, .CatAVDJ h1:hover
+{
+
+    color: #760001;
+    border-bottom: 2px solid #760001;
+}
+
+
+
+
+/*barre de navigation*/
+
+nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#page_acceuil #titre
+{
+    margin: auto;
+}
+
+
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#logo img
+{
+    width: 65px;
+    height: 65px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 5px;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+    color: white;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+    margin-top: 1px;
+}
+
+nav a
+{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 2px solid #760001;
+}
+
+
+
+/*diaporama*/
+
+#diapo 
+{
+   
+    max-width: 85%;
+    margin-left: 110px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    
+}
+
+
+.slide 
+{
+    display: none;
+    width:70.5vw;
+    height:600px;
+    margin:auto;
+
+    
+}
+
+.slide img
+{
+    width: 100%;
+
+}
+
+.prec, .suiv 
+{
+    cursor: pointer;
+    position: absolute;
+    top: 51%;
+    padding: 50px;
+    color: green;
+    font-size: 25px;
+    transition: 0.3s ease;
+    user-select: none;
+    font-weight: bold;
+ 
+}
+
+.suiv 
+{
+    right: 7.5%;
+    border-radius: 3px 0 0 3px;
+ }
+
+.prec
+{
+    left: 7%;
+    border-radius: 3px 0 0 3px;
+}
+
+
+
+.prec:hover, .suiv:hover 
+{
+    background-color: #808080;
+}
+
+h2
+{
+    font-family: 'BallparkWeiner', serif;
+    text-align: center;
+    
+    color: white;
+}
+
+
+
+
+
+/* pied de page*/
+footer
+{
+    display: flex;
+    position: bottom;
+    background: url('images/separateur.png') repeat-x top;
+
+    
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+
+#reseaux
+{
+    margin-left: 15px;
+}
+
+#reseaux img
+{
+    border: 1px solid #181818;
+    border-radius: 80px;
+    margin-right: 10px;
+}
+
+#reseaux h1
+{
+    margin-top: 20px;
+    margin-left: 35px;
+    font-family: 'Dayrom';
+    text-transform: uppercase;
+}
+
+#photosup
+{
+    margin-left: 100px;
+}
+
+#photosup h1
+{
+   
+    font-family: 'Dayrom';
+    text-align: center;
+    margin-right: 125px;
+    text-transform: uppercase;
+}
+
+
+
+#photosup img
+{
+   
+    border: 1px solid #181818;
+    
+    margin-right: 10px;
+}
+
+#photosup p
+{
+   font-family: 'Dayrom';
+   font-weight: bold;
+}
+
+#Identite
+{
+    margin-right: 10px;
+}
+
+#Identite h1
+{
+    font-family: 'Dayrom';
+    margin:auto;
+    text-transform: uppercase;
+}
+
+#Identite img
+{
+    margin-left: 18px;
+}
+
+/*2eme page : histoire*/
+
+#page_histoire h2 u
+{
+    font-family: 'Dayrom';
+   font-weight: underline;
+   text-transform: uppercase;
+   color:white;
+
+}
+
+
+
+.parties, #err, #deu, #trois
+{
+    background-color: rgb(185, 82, 23);
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
+
+    font-family: Dayrom, serif;
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+  
+}
+
+#source
+{
+    position: relative;
+    right: 110px;
+    font-size: 0.7em;
+
+}
+
+#trois p
+{
+    text-align: left;
+    margin-left: 135px;
+}
+
+#err img
+{
+    max-width: 470px;
+    max-height: 300px;
+}
+
+#err, #deu, #trois
+{
+    display: none;
+}
+
+#deu img
+{
+    max-width: 470px;
+    height: 300px;
+}
+
+
+#trois img
+{
+    width: 470px;
+    height: 300px;
+}
+
+
+
+
+
+#bouton1, #bouton2, #bouton3
+{
+    background-color: rgba(255,255,255,0);
+    border: none;
+    font-size: 25px;
+    transform: rotate(0.25turn);
+    transition: 0.7s ease;
+}
+
+
+#bouton1:active, #bouton2:active, #bouton3:active
+{
+    color: white;
+   
+}
+
+
+
+
+#origine h3, #commencement h3, #modernisation h3
+{
+    text-align: left;
+    color: #4AE800;
+    font-family: 'Dayrom';
+    text-transform: uppercase;
+    transition: 0.7s ease;
+
+}
+
+#origine h3:active, #commencement h3:active, #modernisation h3:active
+{
+    color: white;
+}
+
+#origine p, #commencement p, #modernisation p
+{
+    width: 50%;
+    justify-content: center;
+    font-family: 'Dayrom';
+    font-size: 0.85em;
+    font-weight: bold;
+    margin:auto;
+    color: white;
+
+}
+
+/*legendes*/
+
+
+#rectangle
+{
+    display: flex;
+
+    flex-wrap: wrap;
+    background-color: rgb(185, 82, 23);
+    border: 2px solid #fff;
+    border-radius: 4px;
+   
+    width: 56%;
+    padding: 5px;
+
+    margin: auto;
+    margin-top: 25px;
+   
+
+
+}
+
+#centre
+{
+    margin-left: 20px;
+}
+
+.personnage 
+{
+    width: 200px;
+
+    height: 280px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #DDD;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+   
+}
+
+.personnage:hover 
+{
+    background-color: #111;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+.palmares
+{
+    position: relative;
+    bottom: 250px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0;
+    font-size: 0.7em;
+
+
+}
+
+.personnage:hover .palmares
+{
+    opacity: 1;
+}
+
+#perso /*dimension des images*/
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/*Règles*/
+
+
+.regles
+{
+    background-color: rgb(185, 82, 23);
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
+
+    font-family: Dayrom, serif;
+    max-width: 75%;
+    margin: auto;
+    margin-top: 2%;
+
+    text-align: center;
+
+    display: none;
+    
+}
+
+.regles h1
+{
+    text-align: center;
+}
+
+
+
+#anim
+{
+    font-family: Dayrom, serif;
+    
+}
+
+#court
+{
+    max-height: 30%;
+    max-width: 30%;
+   
+}
+
+.liste_regle
+{
+    list-style-type: none; 
+    display: flex;
+}
+
+
+#colonne
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+#gif
+{
+    height: 50%;
+    width: 50%;
+    
+}
+
+.button
+{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding: 1%;
+    margin-top: 0.5%;
+
+
+}
+
+.boutton_suivant 
+{
+    right: 7.5%;
+    border-radius: 3px 0 0 3px; 
+    background-color: rgb(185, 82, 23);
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 1s ease;
+    
+}
+
+.bouton_precedent
+{
+    left: 7%;
+    border-radius: 3px 0 0 3px;
+    background-color: rgb(185, 82, 23);
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 1s ease;
+}
+
+
+
+.bouton_precedent:hover, .boutton_suivant:hover 
+{
+    background-color: #808080;
+    cursor: pointer;
+}
+
+/*classement atp*/
+#table-wrapper 
+{
+
+    position:relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#table-scroll 
+{
+/* width : auto; */
+    height: 600px;
+    overflow: auto;  
+    margin-top:20px;
+    text-align: center;
+}
+
+
+#table-wrapper table 
+{
+    background:green;
+    color:black;
+    box-shadow: 10px 1px 1px black;
+    width:100%;
+}
+#table-wrapper table  th 
+{
+
+    top:-20px;
+    z-index:2;
+    height:20px;
+    width:25%;
+
+}
+
+#classement
+{
+    background: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#classement>tr:nth-child(even)
+{
+    background: lightgray;
+}
+
+#classement>tr:hover
+{
+    background: lightgreen;
+}
+
+.regle
+{
+    background-color: rgb(185, 82, 23);
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
+
+    font-family: Dayrom, serif;
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    margin-top: 22px;
+}
+
+th
+{
+    color: white;
+}
+
+
+
+/** Creer joueur **/
+.formulaire 
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.style
+{
+    background-color: rgb(185, 82, 23);
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 75%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.element {
+    margin-right: 10px;
+    display: inline-block;
+    size: 120;
+    text-align: center;
+}
+
+.element>input {
+    border: 0px;
+    border-bottom: 1px solid grey;
+    width: 300px;
+    margin-left: 50px;
+}
+
+.element>input:invalid {
+    border-bottom: 1px solid red;
+    caret-color: red;
+}
+
+.element>select{
+    margin-left: 50px;
+}
+
+.button{
+    text-align: center;
+
+}
+
+.button button {
+    text-transform: uppercase;
+    border: 0px;
+    box-shadow: 1px 1px 1px black;
+    background: rgba(240, 236, 236, 0.685);
+    padding: 5px;
+    margin: 10px;
+}
+
+.button button:hover {
+    background: rgb(233, 229, 229);
+}
+
+.style table {
+
+    border-collapse: separate;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    table-layout: auto;
+    border-spacing: 5px;
+    text-align: center;
+}
+
+.style th {
+    text-align: center;
+    background-color: rgb(11, 85, 11);
+    border: 1px solid black;
+}
+
+
+.style tr,
+.style td {
+    border: 1px solid black;
+    background-color: rgb(185, 82, 23);
+    color : white;
+}
+
+#Mauvais{
+    background-color: red;
+}
+
+#Moyen{
+    background-color: orange;
+}
+
+#Bon{
+    background-color: green;
+}
+
+.curseur{
+    margin: 10px;
+    display: inline-flex;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.curseur>label{
+    margin-left: 50px;
+}
+
+.profil>fieldset>div{
+    text-align: center;
+}
+
+.niveau>p{
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.niveau>input{
+    width: 10%;
+    text-align: center;
+
+}
+
+/*about us*/
+.photo_personne
+{
+    width:100px; 
+    height:100px;
+    border-radius: 80px;
+    border: 1px grey ridge;
+    box-shadow: 2px 3px 2px 3px black;
+    margin-top:2%;
+}
+
+.bloc
+{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding: 1%;
+    margin-top: 0.5%;
+
+
+}
+
+.bloc h3
+{
+    text-align: center;
+    color:white;
+}
+
+.personne
+{
+    background-color: rgb(185, 82, 23);
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 220px;
+    margin-top: 50px;
+    text-align: center;
+    height: 350px;
+    font-family: 'Dayrom', sans-serif;
+}
+
+.personne p:hover
+{
+    color: gray;
+}
+
+#page_info footer
+{
+    margin-top: 160px;
+}
+
+
+
+
+@media only screen and (max-width: 1500px)  /*media queries si la largeur de l'écran fait moins de 1024px / max-device-width plutot que max-width pour les smartphones / (max-device-width: 480px) 
+pour les navigateurs des smartphones*/
+{
+
+
+    #origine h3, #commencement h3, #modernisation h3
+    {
+      margin-left: 5px;
+      
+    }
+
+    nav ul
+    {
+        flex-wrap: wrap;
+        max-width: 75%;
+    }
+
+    footer 
+    {
+        flex-wrap: wrap;
+    }
+
+    #photosup
+    {
+        margin-left : 75px;
+    } 
+
+    #photosup B
+    {
+         position: relative;
+         right: 30px;
+    }
+
+    #reseaux
+    {
+        margin-left: 70px;
+    }
+
+
+    #Identite
+    {
+        margin-left: 85px;
+    }
+
+
+ 
+    #diapo
+    {
+        position: relative;
+        height: 100%;
+        right: 59px;
+        width: 70vw;
+
+    }
+
+    #err img
+    {
+        width: 75%;
+
+    }
+
+    #deu img
+    {
+        width: 75%;
+        height: 90%;
+       
+    }
+
+    #trois img
+    {
+        width: 75%;
+        height: 90%;
+       
+    }
+
+    #modernisation p
+    {
+        text-align: left;
+    }
+
+    .pied
+    {
+        position: relative;
+        right: 40px;
+    }
+
+    td, tr
+    {
+        font-size: 1.78vw;
+    }
+
+    #origine h3, #commencement h3, #modernisation h3
+    {
+        font-size: 0.98em;
+    }
+
+    li
+    {
+        font-size: 0.87em;
+        margin-bottom: 3px;
+    }
+
+    .CatHistoire, .CatRegles, .CatLegendes, .CatClassement, .CatAVDJ
+    {
+         
+            top: 97px; 
+            left: 111px; 
+           
+            font-size:1vw;
+    }
+
+    .prec
+    {
+     
+        top: 33.17%;
+        width: 5%;
+        left: 5%;
+        font-size: 1.8vw;
+      
+
+    }
+
+    .suiv
+    {
+        left: 68%;
+        top: 33.17%;
+        width: 5%;
+        font-size: 1.8vw;
+      
+    }
+
+    #page_acceuil
+    {
+
+        width: 99.5vw;
+    
+    }
+
+    .curseur, .element
+    {
+     
+       flex-wrap: wrap;
+    }
+
+    .element #name, .element #prenom
+    {
+        width: 20vw;
+    }
+
+    .style tr, .style td
+    {
+
+       font-size: 1.3vw;
+    }
+
+    #court
+    {
+        width: 20vw;
+        height: 12vw;
+ 
+    }
+
+
+    #gif
+    {
+        width: 38vw;
+        height: 30vw;
+    }
+
+    .colonne h1, .colonne p
+    {
+
+        text-align: center;
+    }
+
+}

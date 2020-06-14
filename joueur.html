@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Créer votre joueur !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="formulaire.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/roland_garros.ico" />
+</head>
+
+<body>
+
+  <div id ="page_joueur">
+    <header>
+        <div id="titre">
+            <div id="logo">
+                <img src="images/roland_garros.png" alt="Logo Tennis" />
+                <h1>Tennis Land</h1>
+            </div>
+            <h2>Apprenez le tennis en détail !</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="regles.html">Règles</a></li>
+                <li><a href="personnages.html">Les légendes</a></li>
+                <li><a href="classement.html">Classement</a></li>
+                <li><a href="joueur.html">Créer votre joueur !</a></li>
+                <li><a href="info.html">Qui sommes nous ?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form name="formulaire" method="post" class="style" id="formulaire">
+        <div class="formulaire">
+
+
+            <fieldset>
+                <legend>Civilité</legend>
+                <div class="element">
+                    <input type="text" placeholder="Entrez votre nom" id="name" name="name"  size = "13" required autofocus/>
+                    <input type="text" placeholder="Entrez votre prénom" id="prenom" name="prenom" size = "30"  required />
+                    <select name="sexe" id="sexe" required>
+                        <option value="">--Sexe--</option>
+                        <option value="&#x2642">Homme</option>
+                        <option value="&#x2640">Femme</option>
+               
+                </select>
+                 </div>
+
+                <div class="curseur">
+                    <label for="masse">Masse (de 0 à 130Kg)</label>
+                    <input type="range" min="20" max="130" value="50" step="10" list="masse" name="masse" id="masse" title = "Pallier de 10 par 10">
+                    <datalist id="masse">
+                        <option value="20" label="20">
+                        <option value="30">
+                        <option value="40">
+                        <option value="50">
+                        <option value="60">
+                        <option value="80" label="80">
+                        <option value="90">
+                        <option value="100">
+                        <option value="110">
+                        <option value="120">
+                        <option value="130" label="130">
+                    </datalist>
+
+                    <label for="taille">Taille (de 110 à 210cm)</label>
+                    <input type="range" min="110" max="210" value="150" step="10" list="taille" name="taille"
+                        id="taille"  title = "Pallier de 10 par 10">
+                    <datalist id="taille">
+                        <option value="110" label="110">
+                        <option value="120">
+                        <option value="130">
+                        <option value="140">
+                        <option value="150">
+                        <option value="160" label="160">
+                        <option value="170">
+                        <option value="180">
+                        <option value="190">
+                        <option value="200">
+                        <option value="210" label="210">
+                    </datalist>
+                </div>
+            </fieldset>
+        </div>
+
+
+
+        <div class="profil">
+
+            <fieldset>
+                <legend>Niveau au Tennis</legend>
+
+
+                <div class="niveau">
+                    <p>Service</p>
+                    <input type="radio" name="service" id="service" value="Mauvais"><label for="Mauvais">Mauvais</label>
+                    <input type="radio" name="service" id="service" value="Moyen" checked><label
+                        for="Moyen">Moyen</label>
+                    <input type="radio" name="service" id="service" value="Bon"><label for="Bon">Bon</label>
+                </div>
+                <div class="niveau">
+                    <p>Smash</p>
+                    <input type="radio" name="smash" id="smash" value="Mauvais"><label for="Mauvais">Mauvais</label>
+                    <input type="radio" name="smash" id="smash" value="Moyen" checked><label for="Moyen">Moyen</label>
+                    <input type="radio" name="smash" id="smash" value="Bon"><label for="Bon">Bon</label>
+                </div>
+                <div class="niveau">
+                    <p>Amorti</p>
+                    <input type="radio" name="amorti" id="amorti" value="Mauvais"><label for="Mauvais">Mauvais</label>
+                    <input type="radio" name="amorti" id="amorti" value="Moyen" checked><label for="Moyen">Moyen</label>
+                    <input type="radio" name="amorti" id="amorti" value="Bon"><label for="Bon">Bon</label>
+                </div>
+                <div class="niveau">
+                    <p>C.Droit</p>
+                    <input type="radio" name="coupdroit" id="coupdroit" value="Mauvais"><label
+                        for="Mauvais">Mauvais</label>
+                    <input type="radio" name="coupdroit" id="coupdroit" value="Moyen" checked><label
+                        for="Moyen">Moyen</label>
+                    <input type="radio" name="coupdroit" id="coupdroit" value="Bon"><label for="Bon">Bon</label>
+
+                </div>
+                <div class="niveau">
+                    <p>Revers</p>
+                    <input type="radio" name="revers" id="revers" value="Mauvais"><label for="Mauvais">Mauvais</label>
+                    <input type="radio" name="revers" id="revers" value="Moyen" checked><label for="Moyen">Moyen</label>
+                    <input type="radio" name="revers" id="revers" value="Bon"><label for="Bon">Bon</label>
+                </div>
+                <div class="niveau">
+                    <p>Endurance</p>
+                    <input type="radio" name="endurance" id="endurance" value="Mauvais"><label
+                        for="Mauvais">Mauvais</label>
+                    <input type="radio" name="endurance" id="endurance" value="Moyen" checked><label
+                        for="Moyen">Moyen</label>
+                    <input type="radio" name="endurance" id="endurance" value="Bon"><label for="Bon">Bon</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="button">
+            <button id="add" type="button" onclick="ajouterligne()">Ajouter</button>
+            <button id="del" type="reset" onclick="supprimerligne()">Tout Supprimer</button>
+        </div>
+    </form>
+
+    <div>
+        <table class="style">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Sexe</th>
+                    <th>Masse</th>
+                    <th>Taille</th>
+                    <th>Service</th>
+                    <th>Smash</th>
+                    <th>Amorti</th>
+                    <th>Coup Droit</th>
+                    <th>Revers</th>
+                    <th>Endurance</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div id="reseaux">
+            <h1>Nos réseaux</h1>
+            <p><a href="https://twitter.com/FFTennis?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="_blank"><img src="images/twitter.png" alt="Twitter" title="FFT" /></a><a
+                    href="https://fr-fr.facebook.com/FFTennis/" target="_blank"><img src="images/facebook.png"
+                        alt="Facebook" title="FFT" /></a><a href="https://fr.linkedin.com/company/fft"
+                    target="_blank"><img src="images/linkedin.png" alt="Linkedin" title="FFT" /></a><a
+                    href="https://www.instagram.com/fftennis/?hl=fr" target="_blank"><img src="images/instagram.png"
+                        alt="Instagram" title="FFT" /></a></p>
+
+        </div>
+
+        <div id="photosup">
+            <h1> Quelques Images </h1>
+            <p><a href="images/us_open_max.jpg" target="_blank"><img src="images/us_open.jpg" alt="usopen"
+                        title="Cliquez pour agrandir" class="pied" /></a><a href="images/roland_max.jpg "
+                    target="_blank"><img src="images/roland.jpg" alt="roland" title="Cliquez pour agrandir"
+                        class="pied" /></a><a href="images/wimb_max.jpg" target="_blank"><img src="images/wimb.jpg"
+                        alt="wimble" title="Cliquez pour agrandir" class="pied" /></a><a href="images/open_max.jpg"
+                    target="_blank"><img src="images/open.jpg" alt="open_australie" title="Cliquez pour agrandir"
+                        class="pied" /></a><a href="images/yannick_max.jpg" target="_blank"><img
+                        src="images/yannick.jpg" alt="yannick_noah" title="Cliquez pour agrandir" class="pied" /></a>
+                <B>Credits to FFT.fr © </B></p>
+
+        </div>
+
+
+        <div id="Identite">
+            <h1>Qui somme nous ?</h1>
+            <p><a href="info.html"><img src="images/en_savoir.png" alt="qui_somme_nous" title = "Cliquez pour en savoir plus sur nous"/></a></p>
+        </div>
+
+    </footer>
+  </div>
+</body>
+
+
+</html>
